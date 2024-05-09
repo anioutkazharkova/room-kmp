@@ -11,17 +11,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import com.example.todoapp.AddTodoView
 import com.example.todoapp.AddTodoViewModel
-import com.example.todoapp.screen.TodoList
 import com.example.todoapp.TodoViewModel
 import com.example.todoapp.di.KoinF
+import com.example.todoapp.screen.AddTodoView
+import com.example.todoapp.screen.TodoList
 import moe.tlaster.precompose.PreComposeApp
 import moe.tlaster.precompose.navigation.NavHost
 import moe.tlaster.precompose.navigation.rememberNavigator
 import moe.tlaster.precompose.navigation.transition.NavTransition
-
-
 
 enum class TaskScreen{
     TaskList,

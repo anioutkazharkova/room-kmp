@@ -36,7 +36,3 @@ object KoinF {
         }
     }
 }
-
-fun<T:Any> KoinF.resolve(clazz: KClass<*>):T? {
-    return di?.get(clazz)
-}

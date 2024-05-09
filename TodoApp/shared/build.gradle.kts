@@ -31,7 +31,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
-           // isStatic = true
+            isStatic = true
         }
     }
     sourceSets.all {
@@ -72,7 +72,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared"))
     add("kspAndroid", libs.androidx.room.compiler)
     add("kspIosSimulatorArm64", libs.androidx.room.compiler)
     add("kspIosX64", libs.androidx.room.compiler)
